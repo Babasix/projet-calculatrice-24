@@ -1,0 +1,136 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    user-select: none;
+    background: #ecf0f3;
+}
+
+/* design de la calculatrice */
+.container{   
+    margin-left: 1.8em;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #ffffff; 
+}
+
+.content{
+    width: 100%;
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ 
+/* design des boutons */
+.row button{
+    width: 78px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    border-radius: 4px;
+    transition: .1s;
+    box-shadow: 5px 5px 8px #00000020,
+                -5px -5px 8px #ffff;
+}
+.row button:hover{
+    cursor: pointer;
+    box-shadow: inset 5px 5px 8px rgba(16, 16, 16, .1),
+                inset -5px -5px 8px #fff;
+    background: #fff;
+}
+
+/* designi de l'affichage à l'écran */
+.display #screen{
+    margin-bottom: .5em;
+    width: auto;
+    height: 70px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: .5em;
+    background: #ecf0f3;
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                inset -8px -8px 8px #ffffff;
+}
+
+/* design pour le bouton  */
+#eval{
+    background: #33ccff;
+    color: #fff;
+    box-shadow: inset 5px 5px 8px #66d9ff,
+                inset -5px -5px 8px #00ace6;
+}
+
+#eval:hover{
+    box-shadow: inset 5px 5px 8px #00ace6,
+                inset -5px -5px 8px #00ace6;
+}
+
+/* design du bouton "all clear" */
+#ac{
+    background: #33cc33;
+    color: #fff;
+}
+
+#ac:hover{
+    box-shadow: inset 5px 5px 8px #2eb82e,
+                inset -5px -5px 8px #33cc33;
+}
+
+/* design du bouton "clear" */
+#ce{
+    background: #ff3399;
+    color: #fff;
+}
+
+#ce:hover{
+    box-shadow: inset 5px 5px 8px #e60073,
+                inset -5px -5px 8px #ff3399;
+}
+
+/* design de la zone d'Historique */
+#history{
+    margin-left: 1.8em;
+    width: 340px;
+    height: 335px;
+    border-radius: 8px;
+    overflow-y: scroll;
+    font-size: 1.1em;
+    background: #33ccff;
+    box-shadow: inset 5px 5px 8px #66d9ff,
+                inset -5px -5px 8px #00ace6;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+#history:hover{
+    box-shadow: inset 5px 5px 8px #00ace6,
+                inset -5px -5px 8px #00ace6;
+}
+/* creation d'un srollbar pour la zone d'Historique */
+#history::-webkit-scrollbar{
+    width: 1;
+}
+/* design des donnees de la zone d'historique */
+#history h1{
+    padding: 0px 0px;
+    font-size: 1.8em;
+}
+/* design des dernières données de la zone d'historique */
+#history p:last-child{
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #eee;
+}
+
